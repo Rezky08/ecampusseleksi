@@ -2,13 +2,13 @@
 Contoh: 	7:2 = 3 atau 8:4 = 2 -->
 <?php
 
-function pembagiBilangan($a,$b)
+function pembagiBilangan($a, $b)
 {
     $res = 0;
     $temp = 0;
-    while($temp<=$a){
+    while ($temp <= $a) {
         $temp += $b;
-        if ( $temp <= $a) {
+        if ($temp <= $a) {
             $res++;
         }
     }
@@ -17,5 +17,5 @@ function pembagiBilangan($a,$b)
 
 $a = 40;
 $b = 20;
-$result = pembagiBilangan($a,$b);
-echo $a.':'.$b.'='.$result;
+$result = pembagiBilangan($a, $b);
+echo $a . ':' . $b . '=' . $result;

@@ -6,10 +6,10 @@ $table = "";
 $username = "root";
 $password = "";
 
-$connection = mysqli_connect($host,$username,$password,$DB);
+$connection = mysqli_connect($host, $username, $password, $DB);
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-  }
+  die("Connection failed: " . $conn->connect_error);
+}
 
 $query = "SELECT Mahasiswa.NM_Mhs, MAX(Nilai.Value) AS Nilai FROM Mahasiswa LEFT JOIN Nilai ON Mahasiswa.NIM = Nilai.NIM WHERE Kode_MataKuliah = MK303";
 
